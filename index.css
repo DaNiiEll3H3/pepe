@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.section1{
+    
+    height: 100vh;
+    background: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+
+.contenedor1{
+
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+.menu > li:nth-last-child(1) a{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: black;
+}
+
+h1{
+    color: white;
+    letter-spacing: 25px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.flecha{
+    width: 40px;
+    position: absolute;
+    top: 180px;
+    left: 48%;
+}
+.imgmenu{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.section2 {
+    display: grid;
+    margin: auto;
+    gap: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 60vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    font-size: 1.5rem;
+    
+}
+
+.item:nth-child(1) {
+    background: #fff;
+    color: #222;
+}
+.item:nth-child(2) {
+    background: hsl(51, 100%, 49%);
+}
+.item:nth-child(3) {
+    background: hsl(7, 99%, 70%);
+}
+.item:nth-child(4) {
+    background: #fff;
+}
+.item:nth-child(5) {
+    background: hsl(173, 47%, 73%)
+
+}
+.item:nth-child(6) {
+    background: hsl(198, 87%, 65%);
+}
+
+
+.huevo{
+    width: 100%;
+    margin-top: 20px;
+}
+.copa{
+    width: 100%;
+    margin-top: 20px;
+}
+.cereza{
+    width: 100%;
+    margin-top: 20px;
+}
+.naranja{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.texto{
+    font-size: 2.1rem;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    color: black;
+    letter-spacing: normal;
+}
+
+.parrafo{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.texto4{
+    font-size: 2.1rem;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    color: black;
+    letter-spacing: normal;
+}
+
+.parrafo4{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.texto2{
+    font-size: 2.1rem;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    color: black;
+    letter-spacing: normal;
+}
+.parrafo2{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.texto6{
+    font-size: 2.1rem;
+    margin-top: 30px;
+    line-height: 2.5rem;
+    color: black;
+    letter-spacing: normal;
+}
+
+.parrafo6{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    color: black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .imgmenu{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        left: 70%;
+        
+       
+    }
+
+    .section2 {
+        display: grid;
+        margin: auto;
+        gap: 0;
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        min-height: 60vh;
+    }
+    .item {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .texto{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: normal;
+    }
+    .parrafo{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        
+    }
+    .texto2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: normal;
+    }
+    .parrafo2{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .texto4{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: normal;
+    }
+    .parrafo4{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .texto6{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: normal;
+    }
+    .parrafo6{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
